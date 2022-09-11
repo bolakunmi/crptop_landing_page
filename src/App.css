@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  padding: 0 16px;
+  background: rgb(13, 13, 43);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* HEADER */
+header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+header ul {
+  display: inline-flex;
+  list-style: none;
+  padding: 4px 0;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header ul div {
+  display: inline-flex;
+  align-items: center;
 }
+
+header li {
+  padding: 0 16px;
+  text-transform: capitalize;
+  /* margin 32px top between them */
+}
+
+header ul hr {
+  color: rgb(77,72,83);
+  margin: 0 24px;
+  height: 16px;
+}
+header ul .register {
+  background: rgb(59, 130, 246);
+  padding: 4px 16px;
+  border-radius: 16px;
+  color: white;
+  /* 24px margin between */
+}
+
+header ul .login {
+  padding-right: 0;
+  padding-left: 24px;
+  /* 24px margin between */
+}
+/* END OF HEADER */
+
+/* note */
+/* from 1024px there is the media query */
+/* width distances are 1024px, 768px, 640px */
+/*  padding is always 16px */
