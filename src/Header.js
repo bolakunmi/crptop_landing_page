@@ -2,7 +2,9 @@ import React from "react";
 const HEADER = () => {
   return (
     <header>
-      <div>Logo</div>
+      <div>Logo
+        <img src={require("./files/logo2.svg")} alt="logo"></img>
+      </div>
       <ul>
         <li>products</li>
         <li>features</li>

@@ -2,9 +2,18 @@
   box-sizing: border-box;
 }
 
+/* note */
+/* from 1024px there is the media query */
+/* width distances are 1024px, 768px, 640px */
+/*  padding is always 16px */
+/* font-family:Oxanium,sans-serif */
+
 html {
   padding: 0 16px;
   background: rgb(13, 13, 43);
+  color: white;
+  font-family:'Oxanium',sans-serif
+
 }
 
 /* HEADER */
@@ -13,6 +22,7 @@ header {
   justify-content: space-between;
   align-items: center;
   color: white;
+  font-size: 16px;
 }
 header ul {
   display: inline-flex;
@@ -33,7 +43,7 @@ header li {
 }
 
 header ul hr {
-  color: rgb(77,72,83);
+  color: rgb(77, 72, 83);
   margin: 0 24px;
   height: 16px;
 }
@@ -42,17 +52,65 @@ header ul .register {
   padding: 4px 16px;
   border-radius: 16px;
   color: white;
-  /* 24px margin between */
 }
 
 header ul .login {
   padding-right: 0;
   padding-left: 24px;
-  /* 24px margin between */
 }
 /* END OF HEADER */
 
-/* note */
-/* from 1024px there is the media query */
-/* width distances are 1024px, 768px, 640px */
-/*  padding is always 16px */
+/* BODY */
+.hero-section {
+  padding: 16px 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.hero-section img {
+  height: 400px;
+  width: auto;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  text-transform: capitalize;
+  padding: 8px 0;
+  margin: 0;
+  /* adjust the line height */
+}
+
+.hero-advert {
+  background: rgb(75, 85, 99);
+  display: inline-flex;
+  width: 284px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 4px;
+  padding-right: 12px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+
+.hero-advert div:first-child {
+  padding: 4px 16px;
+  background: white;
+  color: rgb(75, 85, 99);
+  text-transform: uppercase;
+  border-radius: 16px;
+}
+
+.hero-description-container p {
+  font-size: 12px;
+  margin-top: 0;
+}
+
+.hero-description-container button {
+  background: rgb(37, 99, 235);
+  border: none;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+}
+/* END OF BODY */
