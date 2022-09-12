@@ -1,7 +1,7 @@
 import React from "react";
 
 const BODY = () => {
-  return (
+  return (<React.Fragment>
     <div className="body-container1">
       <section className="hero-section">
         <div className="hero-description-container">
@@ -75,7 +75,34 @@ const BODY = () => {
           <button>learn more</button>
         </div>
       </section>
+      <section className="calculate">
+        <h2>Check how much you can earn with us</h2>
+        <p>
+          lets check your hash rate to see how much you will earn today,
+          <br></br> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div className="calculator-container">
+          <form className="calculator-tools">
+            <input placeholder="Enter your hash rate"></input>
+
+            <select>
+              <option>TH/s</option>
+              <option>H/s</option>
+              <option>KH/s</option>
+              <option>GH/s</option>
+              <option>MH/s</option>
+            </select>
+            <button>calculate</button>
+          </form>
+          <div className="calculator-info">
+            <h2 style={{'font-size': '16px', 'color':'#3671E9', 'marginBottom': '16px'}}>ESTIMATED 24 HOUR REVENUE:</h2>
+            <h2 style={{'font-size': '32px', 'marginBottom': '4px'}}>0.055 130 59 ETH <span style={{'color':'#3671E9'}}>($1275)</span></h2>
+            <p>Revenue will change based on mining difficulty and Ethereum price.</p>
+          </div>
+        </div>
+      </section>
     </div>
+    </React.Fragment>
   );
 };
 

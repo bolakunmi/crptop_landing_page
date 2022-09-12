@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Oxanium", sans-serif;
 }
 
 /* note */
@@ -10,11 +11,12 @@
 
 html {
   color: white;
-  font-family: "Oxanium", sans-serif;
+  font-family: "Oxanium", cursive;
 }
 
 h1 {
   font-size: 48px;
+  font-family: "Oxanium", cursive;
 }
 
 h2 {
@@ -73,7 +75,7 @@ header ul .login {
 /* BODY */
 .body-container1 {
   padding: 0 16px;
-  background: #0D0D2B;
+  background: #0d0d2b;
 }
 .hero-section {
   padding: 16px 0;
@@ -200,7 +202,100 @@ header ul .login {
   font-size: 16px;
   color: white;
 }
+
+.calculate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.calculator-container {
+  padding: 48px;
+  background: #fbfcfe;
+  border-radius: 16px;
+  color: #0d0d2b;
+}
+
+.calculator-tools select,
+.calculator-tools input {
+  border-color: #e7e7e7;
+  border-width: 2px 0px;
+  border-top: none;
+  color: #0d0d2b;
+  font-size: 20px;
+  padding-bottom: 8px;
+}
+
+/* check how to removed border during focus */
+.calculator-tools input:focus {
+  border-color: #e7e7e7;
+  border-width: 2px 0px;
+  border-top: none;
+  color: #0d0d2b;
+  font-size: 20px;
+  padding-bottom: 8px;
+}
+
+.calculator-tools input {
+  width: 400px;
+}
+
+.calculator-tools select {
+  width: 200px;
+}
+
+.calculator-tools {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calculator-tools button {
+  font-size: 18px;
+  padding: 8px 32px;
+  border-radius: 32px;
+  border: none;
+  background: #3671e9;
+  color: white;
+}
+.calculator-container {
+  padding: 48px;
+  width: 900px;
+}
+
+.calculator-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.calculator-info * {
+  margin: 0;
+}
 /* END OF BODY */
+
+/* FOOTER */
+footer {
+  background: #0d0d2b;
+  padding: 0 16px;
+  color: white;
+  font-size: 16px;
+}
+
+.footer-about {
+  background: #0d0d2b;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 16px;
+  align-items: flex-start;
+}
+
+.footer-about li{
+  list-style: none;
+}
+/* END OF FOOTER */
 
 /* animations */
 @keyframes swell {
