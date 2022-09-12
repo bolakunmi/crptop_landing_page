@@ -9,15 +9,25 @@
 /* font-family:Oxanium,sans-serif */
 
 html {
-  padding: 0 16px;
-  background: rgb(13, 13, 43);
   color: white;
-  font-family:'Oxanium',sans-serif
+  font-family: "Oxanium", sans-serif;
+}
 
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 24px;
+}
+button {
+  cursor: pointer;
 }
 
 /* HEADER */
 header {
+  background: #0d0d2b;
+  padding: 0 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,11 +66,15 @@ header ul .register {
 
 header ul .login {
   padding-right: 0;
-  padding-left: 24px;
+  padding-left: 40px;
 }
 /* END OF HEADER */
 
 /* BODY */
+.body-container1 {
+  padding: 0 16px;
+  background: #0D0D2B;
+}
 .hero-section {
   padding: 16px 0;
   display: inline-flex;
@@ -70,6 +84,7 @@ header ul .login {
 .hero-section img {
   height: 400px;
   width: auto;
+  animation: swell 2s ease 0.4s 1 normal;
 }
 
 .hero-section h1 {
@@ -77,6 +92,8 @@ header ul .login {
   text-transform: capitalize;
   padding: 8px 0;
   margin: 0;
+  animation: float_up 2s ease 0.4s 1 normal;
+
   /* adjust the line height */
 }
 
@@ -99,11 +116,13 @@ header ul .login {
   color: rgb(75, 85, 99);
   text-transform: uppercase;
   border-radius: 16px;
+  animation: swell 2s ease 0.4s 1 normal;
 }
 
 .hero-description-container p {
   font-size: 12px;
   margin-top: 0;
+  animation: float_up 2s ease 0.4s 1 normal;
 }
 
 .hero-description-container button {
@@ -112,5 +131,106 @@ header ul .login {
   font-size: 16px;
   text-transform: capitalize;
   color: white;
+  padding: 4px 16px;
+  border-radius: 20px;
+  animation: swell 2s ease 0.4s 1 normal;
+  display: inline-flex;
+  align-items: center;
+}
+
+.vector {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 24px;
+  animation: slide-right 2.5s ease 0.4s 1 normal;
+}
+.vector img {
+  background: white;
+  height: 10px;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-div {
+  display: inline-flex;
+  align-items: center;
+}
+
+.info-div-img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: #252540;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24px;
+}
+
+.info-div-img img {
+  width: 40px;
+  height: auto;
+}
+
+.info-div h2 {
+  font-size: 24px;
+  margin: 4px 0;
+}
+
+.info-div p {
+  font-size: 12px;
+}
+
+.why {
+  display: flex;
+}
+
+.why button {
+  padding: 4px 16px;
+  border-radius: 20px;
+  border: none;
+  background: #3671e9;
+  font-size: 16px;
+  color: white;
 }
 /* END OF BODY */
+
+/* animations */
+@keyframes swell {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes float_up {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

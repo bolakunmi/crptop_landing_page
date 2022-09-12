@@ -2,8 +2,8 @@ import React from "react";
 const HEADER = () => {
   return (
     <header>
-      <div>Logo
-        <img src={require("./files/logo2.svg")} alt="logo"></img>
+      <div>
+        <img src={require("./files/imports/Logo.png")} alt="logo"></img>
       </div>
       <ul>
         <li>products</li>
