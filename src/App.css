@@ -273,6 +273,100 @@ header ul .login {
 .calculator-info * {
   margin: 0;
 }
+
+/* body2 */
+.white-section {
+  color: #0d0d2b;
+  padding: 0 16px;
+}
+
+.coins-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 32px;
+}
+
+.coins {
+  padding: 48px 24px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 20px 0px black;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #828282;
+}
+
+/* .coins img{
+  width: 80px;
+  height: auto;
+} */
+
+.coins-description {
+  display: flex;
+  align-items: center;
+}
+
+.coins-description h2 {
+  margin-right: 10px;
+  color: #0d0d2b;
+}
+
+.coins button {
+  background: white;
+  border: #0d0d2b;
+  border-width: 2px;
+  border-style: solid;
+  display: flex;
+  height: 30px;
+  padding: 20px;
+  width: 30px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.coins button p{
+  display: none;
+}
+
+.coins:hover {
+  color: #c5c5c5;
+  background: #2b076e;
+  /* backdrop-filter: blur(250px); */
+}
+
+.coins:hover .coins-description p {
+  opacity: 0.7;
+}
+
+.coins:hover .coins-description h2 {
+  color: white;
+}
+
+.coins:hover .coins-button{
+  background: #3671E9;
+  color: white;
+  width: unset;
+  border-radius: 30px;
+}
+
+.coins:hover .vector2{
+  width: 24px;
+  height: 24px;
+  border-radius:50%;
+  background:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coins:hover .coins-button p{
+  display: block;
+  margin-right:10px ;
+}
+
 /* END OF BODY */
 
 /* FOOTER */
@@ -290,10 +384,33 @@ footer {
   color: white;
   font-size: 16px;
   align-items: flex-start;
+  padding-top: 24px;
 }
 
-.footer-about li{
+.footer-about ul,
+.footer-about h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-about li {
   list-style: none;
+  margin-top: 24px;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 0;
+}
+
+.footer-about h2 {
+  width: 400px;
+}
+
+.socials img {
+  margin-left: 30px;
 }
 /* END OF FOOTER */
 
