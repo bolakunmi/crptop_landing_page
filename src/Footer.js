@@ -65,7 +65,7 @@ const FOOTER = () => {
           </div>
         </div>
         <h2 className="mylink">
-          <a href="https://bolakunmiprofile.netlify.app" target="_blank">
+          <a href="https://bolakunmiprofile.netlify.app" target="_blank" rel="noreferrer">
             keenest
           </a>
         </h2>
