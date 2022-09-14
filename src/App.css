@@ -265,10 +265,11 @@ header ul .login {
 .calculator-tools input:focus {
   border-color: #e7e7e7;
   border-width: 2px 0px;
-  border-top: none;
+  border: unset;
   color: #0d0d2b;
   font-size: 20px;
   padding-bottom: 8px;
+
 }
 
 .calculator-tools input {
@@ -501,6 +502,15 @@ header ul .login {
   padding-bottom: 8px;
   background: none;
   width: 350px;
+}
+
+.subscribe input::placeholder{
+  color: rgb(190, 190, 190);
+}
+
+.subscribe input:valid{
+    border-color: #749673;
+      background: red;
 }
 /* END OF BODY */
 
