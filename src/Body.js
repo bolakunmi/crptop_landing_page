@@ -26,6 +26,16 @@ const BODY = () => {
           <div>
             <img src={require("./files/hero-img.png")} alt="hero-img" />
           </div>
+          <img
+            className="background"
+            src={require("./files/hero-ribbon-1.png")}
+            alt="background-img"
+          />
+          <img
+            className="background"
+            src={require("./files/hero-ribbon-2.png")}
+            alt="background-img"
+          />
         </section>
 
         <section className="info">

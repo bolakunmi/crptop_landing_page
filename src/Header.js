@@ -13,7 +13,7 @@ const HEADER = () => {
         <div>
           <li className="login">login</li>
           <hr></hr>
-          <li className="register">register</li>
+          <button className="register">register</button>
         </div>
       </ul>
     </header>

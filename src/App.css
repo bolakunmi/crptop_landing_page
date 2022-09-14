@@ -13,6 +13,7 @@
 html {
   color: white;
   font-family: "Oxanium", cursive;
+  background: #0d0d2b;
   /* max-width: 1200px; */
 }
 
@@ -39,7 +40,7 @@ p{
 /* HEADER */
 header {
   background: #0d0d2b;
-  padding: 0 100px;
+  padding: 10px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,9 +81,11 @@ header ul hr {
 }
 header ul .register {
   background: rgb(59, 130, 246);
-  padding: 4px 16px;
-  border-radius: 16px;
+  padding: 10px 24px;
+  border-radius: 32px;
   color: white;
+  border: none;
+  font-size: 16px;
 }
 
 header ul .login {
@@ -315,7 +318,8 @@ header ul .login {
 .white-section {
   color: #0d0d2b;
   padding: 0 100px;
-  margin-top: 200px;
+  padding-top: 200px;
+  background: white;
 }
 
 .white-section h1 {
@@ -508,10 +512,7 @@ header ul .login {
   color: rgb(190, 190, 190);
 }
 
-.subscribe input:valid{
-    border-color: #749673;
-      background: red;
-}
+
 /* END OF BODY */
 
 /* FOOTER */
@@ -553,6 +554,7 @@ footer li:hover{
   justify-content: space-between;
   align-items: center;
   padding: 48px 0;
+  padding-bottom: 24px;
 }
 
 .footer-about h2 {
@@ -571,7 +573,23 @@ footer li:hover{
 .socials img:hover{
   transform: scale(1.3);
 }
+
+.mylink a{
+  /* text-align: center; */
+  color: white;
+}
+
+.mylink{
+  padding-bottom: 24px;
+}
 /* END OF FOOTER */
+
+/* backgrounds-images */
+.background{
+  height: unset;
+  width: unset;
+  position: absolute;
+}
 
 /* animations */
 @keyframes swell {
