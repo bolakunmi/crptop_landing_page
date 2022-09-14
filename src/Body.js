@@ -78,6 +78,21 @@ const BODY = () => {
         </section>
 
         <section className="why">
+          <img
+            className="background"
+            src={require("./files/why-model-1.png")}
+            alt="background-img"
+          />
+          <img
+            className="background"
+            src={require("./files/why-ribbon.png")}
+            alt="background-img"
+          />
+          <img
+            className="background"
+            src={require("./files/why-model-2.png")}
+            alt="background-img"
+          />
           <img src={require("./files/why-img.png")} alt="why-img" />
           <div>
             <h1>why you should choose CHAPPO</h1>{" "}
