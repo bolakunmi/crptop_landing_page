@@ -2,13 +2,8 @@ import React from "react";
 import TrackVisibility from "react-on-screen";
 
 
-
-const FOOTER = () => {
-  return (
-    <footer>
-      <TrackVisibility partialVisibility>
-        {({ isVisible }) => (
-          <div className="footer-about">
+const FOOTER_ABOUT =()=>{
+return(<div className="footer-about">
             <div>
               <img src={require("./files/imports/Logo.png")} alt="logo"></img>
             </div>
@@ -79,8 +74,15 @@ const FOOTER = () => {
                 </div>
               </div>
             </div>
-          </div>
-        )}
+          </div>)
+}
+const FOOTER = () => {
+  return (
+    <footer>
+      <TrackVisibility partialVisibility>
+        {({ isVisible }) => isVisible ? (<FOOTER_ABOUT/>
+          
+        ) : <loading/>}
       </TrackVisibility>
 
       <TrackVisibility partialVisibility>

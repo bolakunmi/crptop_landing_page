@@ -8,7 +8,7 @@ const BODY = () => {
     <React.Fragment>
       <div className="body-container1">
         <TrackVisibility partialVisibility>
-            {({ isVisible }) => <section className="hero-section">
+            {({ isVisible }) => (isVisible?<section className="hero-section">
           <div className="hero-description-container">
             <div className="hero-advert">
               <div>70% save</div>
@@ -40,11 +40,11 @@ const BODY = () => {
             src={require("./files/hero-ribbon-2.png")}
             alt="background-img"
           />
-        </section>}
+        </section>:<loadig/>)}
         </TrackVisibility>
         
 <TrackVisibility partialVisibility>
-            {({ isVisible }) => <section className="info">
+            {({ isVisible }) => (isVisible?<section className="info">
           <div className="info-div">
             <div className="info-div-img">
               <img
@@ -81,11 +81,11 @@ const BODY = () => {
               <p>trusted wallet investors</p>
             </div>
           </div>
-        </section>}
+        </section>:<loading/>)}
         </TrackVisibility>
         
 <TrackVisibility partialVisibility>
-            {({ isVisible }) => <section className="why">
+            {({ isVisible }) => (isVisible?<section className="why">
           <img
             className="background background-3"
             src={require("./files/why-model-1.png")}
@@ -111,11 +111,11 @@ const BODY = () => {
             </p>
             <button>learn more</button>
           </div>
-        </section>}
+        </section>:<loading/>)}
         </TrackVisibility>
 
         <TrackVisibility partialVisibility>
-            {({ isVisible }) => <section className="calculate">
+            {({ isVisible }) => (isVisible?<section className="calculate">
           <div className="calculate-info">
             <h2>Check how much you can earn with us</h2>
             <p>
@@ -157,7 +157,7 @@ const BODY = () => {
               </p>
             </div>
           </div>
-        </section>}
+        </section>:<loading/>)}
         </TrackVisibility>
         
         
