@@ -146,9 +146,10 @@ header ul .login {
   display: inline-flex;
   align-items: center;
   column-gap: 100px;
-  background-image: url("./files/hero-ribbon-1.png");
-  background-repeat: round;
-  background-position: bottom center;
+  background-image: url("./files/hero-ribbon-1.png"),
+    url("./files//hero-ribbon-2.png");
+  background-repeat: no-repeat;
+  background-position: bottom center, bottom right 20%;
 }
 
 .hero-section img {
@@ -268,8 +269,13 @@ header ul .login {
   background-position: right bottom;
 }
 
+.why img {
+  animation: slide-right 2s ease 0.4s 1 normal;
+}
+
 .why div {
   margin-top: 80px;
+  animation: slide-left 2s ease 0.4s 1 normal;
 }
 
 .why button {
@@ -290,10 +296,12 @@ header ul .login {
 
 .calculate-info {
   transform: translateY(70px);
+  animation: slide-down 2s ease 0.4s 1 normal;
 }
 
 .calculate-info p {
   line-height: 24px;
+  animation: slide-down 2s ease 0.4s 1 normal;
 }
 
 .calculator-container {
@@ -301,6 +309,7 @@ header ul .login {
   background: #fbfcfe;
   border-radius: 16px;
   color: #0d0d2b;
+  animation: swell 2s ease 0.4s 1 normal;
 }
 
 .calculator-tools select,
@@ -513,6 +522,18 @@ header ul .login {
   column-gap: 50px;
 }
 
+.statistics-object img {
+  animation: slide-right 2s ease 0s 1 normal;
+}
+
+.statistics-object div {
+  animation: slide-left 2s ease 0s 1 normal;
+}
+
+.statistics-object button {
+  animation: swell 2s ease 0s 1 normal;
+}
+
 .statistics-object:nth-child(odd) {
   flex-direction: row-reverse;
 }
@@ -535,6 +556,7 @@ header ul .login {
   background-image: url("./files/bitcoin-background.png");
   background-repeat: no-repeat;
   background-position: right;
+  animation: swell 2s ease 0s 1 normal;
 }
 
 .subscribe-section button {
@@ -687,7 +709,7 @@ footer li:hover {
 .background-4 {
   bottom: 0;
   transform: translateY(150px);
-  display: none;
+  /* display: none; */
 }
 
 .background-5 {
@@ -758,6 +780,17 @@ footer li:hover {
   0% {
     opacity: 0;
     transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
   }
   100% {
     opacity: 1;
