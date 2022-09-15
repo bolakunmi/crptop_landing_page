@@ -697,9 +697,13 @@ footer li:hover {
 .background-9 {
   right: 150px;
 }
+.background-10{
+    transform: translateY(-300px);
 
+}
 .background-11 {
   right: 100px;
+  transform: translateY(-300px);
 }
 
 /* media queries */
