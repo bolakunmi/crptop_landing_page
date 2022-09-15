@@ -15,7 +15,7 @@ html {
   font-family: "Oxanium", cursive;
   background: #0d0d2b;
   /* max-width: 1200px; */
-  width: fit-content;
+  /* width: fit-content; */
 
   margin: 0;
   padding: 0;
@@ -647,12 +647,21 @@ footer li:hover {
 }
 
 /* media queries */
-/* @media screen and (max-width:1200px) {
-  header{
-    padding: 0px 10px
-  }
+@media screen and (max-width:1200px) {
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
   
-} */
+}
 
 /* animations */
 @keyframes swell {
