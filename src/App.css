@@ -753,6 +753,16 @@ footer li:hover {
   display: none;
 }
 
+.blur{
+  opacity: 0.2;
+  animation: none;
+}
+
+.blur *{
+  opacity: 0.2;
+  animation: none;
+}
+
 /* media queries */
 @media screen and (max-width: 1200px) {
   body,
