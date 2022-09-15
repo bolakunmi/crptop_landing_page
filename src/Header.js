@@ -6,10 +6,18 @@ const HEADER = () => {
         <img src={require("./files/imports/Logo.png")} alt="logo"></img>
       </div>
       <ul>
-        <li className="list-items">products</li>
-        <li className="list-items">features</li>
-        <li className="list-items">about</li>
-        <li className="list-items">contact</li>
+        <span className="text-slide-up">
+          <li className="list-items">products</li>
+        </span>
+        <span className="text-slide-up">
+          <li className="list-items">features</li>
+        </span>
+        <span className="text-slide-up">
+          <li className="list-items">about</li>
+        </span>
+        <span className="text-slide-up">
+          <li className="list-items">contact</li>
+        </span>
         <div>
           <li className="login">login</li>
           <hr></hr>

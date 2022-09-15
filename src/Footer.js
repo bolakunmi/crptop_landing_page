@@ -11,20 +11,40 @@ const FOOTER = () => {
           <span style={{ fontSize: "20px", fontWeight: "500" }}>
             Quick Link
           </span>
-          <li>Home</li>
-          <li>products</li>
-          <li>features</li>
-          <li>about</li>
-          <li>contact</li>
+          <span className="text-slide-up">
+            <li>Home</li>
+          </span>
+          <span className="text-slide-up">
+            <li>products</li>
+          </span>
+          <span className="text-slide-up">
+            <li>features</li>
+          </span>
+          <span className="text-slide-up">
+            <li>about</li>
+          </span>
+          <span className="text-slide-up">
+            <li>contact</li>
+          </span>
         </ul>
 
         <ul>
           <span style={{ fontSize: "20px", fontWeight: "500" }}>Resources</span>
-          <li>Download Whitepaper</li>
-          <li>Smart Token</li>
-          <li>Blockchain Explorer</li>
-          <li>Crypto API </li>
-          <li>Interest</li>
+          <span className="text-slide-up">
+            <li>Download Whitepaper</li>
+          </span>
+          <span className="text-slide-up">
+            <li>Smart Token</li>
+          </span>
+          <span className="text-slide-up">
+            <li>Blockchain Explorer</li>
+          </span>
+          <span className="text-slide-up">
+            <li>Crypto API </li>
+          </span>
+          <span className="text-slide-up">
+            <li>Interest</li>
+          </span>
         </ul>
 
         <div>
@@ -65,7 +85,11 @@ const FOOTER = () => {
           </div>
         </div>
         <h2 className="mylink">
-          <a href="https://bolakunmiprofile.netlify.app" target="_blank" rel="noreferrer">
+          <a
+            href="https://bolakunmiprofile.netlify.app"
+            target="_blank"
+            rel="noreferrer"
+          >
             keenest
           </a>
         </h2>
