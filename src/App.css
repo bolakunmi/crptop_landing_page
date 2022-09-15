@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Oxanium", sans-serif;
   /* max-width: 1200px; */
+  scroll-behavior: smooth;
 }
 
 /* note */
