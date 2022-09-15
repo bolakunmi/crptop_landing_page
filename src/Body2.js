@@ -68,11 +68,11 @@ const BODY2 = () => {
         </div>
       </section>
       <section className="statistics">
-                            <img
-            className="background"
-            src={require("./files/features-circle-1.png")}
-            alt="background-img"
-          />
+        <img
+          className="background background-6"
+          src={require("./files/features-circle-1.png")}
+          alt="background-img"
+        />
         <h1 style={{ textAlign: "center" }}>
           Market sentiments, portfolio, and run the infrastructure of your
           choice
@@ -123,21 +123,22 @@ const BODY2 = () => {
             />
           </div>
         </div>
-                                    <img
-            className="background"
-            src={require("./files/features-circle-2.png")}
-            alt="background-img"
-          />
+
       </section>
 
       <section className="mining-section">
+                <img
+          className="background background-7"
+          src={require("./files/features-circle-2.png")}
+          alt="background-img"
+        />
         <div className="subscribe-section">
           <div className="subscribe-description">
-                                                <img
-            className="background"
-            src={require("./files/ethereum-backgound.png")}
-            alt="background-img"
-          />
+            <img
+              className="background background-8"
+              src={require("./files/ethereum-backgound.png")}
+              alt="background-img"
+            />
             <h1>Start mining now</h1>
             <p>
               Join now with CRAPPO to get the latest news and start mining now
@@ -151,23 +152,23 @@ const BODY2 = () => {
               pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$"
             ></input>
             <button> Subscribe</button>
-                                                <img
-            className="background"
-            src={require("./files/bitcoin-background.png")}
-            alt="background-img"
-          />
+            <img
+              className="background background-9"
+              src={require("./files/bitcoin-background.png")}
+              alt="background-img"
+            />
           </div>
         </div>
-
-                                                        <img
-            className="background"
-            src={require("./files/something2.png")}
-            alt="background-img"
-          />                                                <img
-            className="background"
-            src={require("./files/something.png")}
-            alt="background-img"
-          />
+        <img
+          className="background background-10"
+          src={require("./files/something2.png")}
+          alt="background-img"
+        />
+        <img
+          className="background background-11"
+          src={require("./files/something.png")}
+          alt="background-img"
+        />
       </section>
     </React.Fragment>
   );

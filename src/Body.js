@@ -27,12 +27,12 @@ const BODY = () => {
             <img src={require("./files/hero-img.png")} alt="hero-img" />
           </div>
           <img
-            className="background"
+            className="background background-1"
             src={require("./files/hero-ribbon-1.png")}
             alt="background-img"
           />
           <img
-            className="background"
+            className="background background-2"
             src={require("./files/hero-ribbon-2.png")}
             alt="background-img"
           />
@@ -79,17 +79,17 @@ const BODY = () => {
 
         <section className="why">
           <img
-            className="background"
+            className="background background-3"
             src={require("./files/why-model-1.png")}
             alt="background-img"
           />
           <img
-            className="background"
+            className="background background-4"
             src={require("./files/why-ribbon.png")}
             alt="background-img"
           />
           <img
-            className="background"
+            className="background background-5"
             src={require("./files/why-model-2.png")}
             alt="background-img"
           />
