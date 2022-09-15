@@ -146,6 +146,9 @@ header ul .login {
   display: inline-flex;
   align-items: center;
   column-gap: 100px;
+  background-image: url("./files/hero-ribbon-1.png");
+  background-repeat: round;
+  background-position: bottom center;
 }
 
 .hero-section img {
@@ -260,6 +263,9 @@ header ul .login {
 .why {
   display: flex;
   column-gap: 100px;
+  background-image: url("./files/why-model-2.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .why div {
@@ -469,6 +475,9 @@ header ul .login {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("./files/features-circle-2.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 .statistics h2 {
@@ -511,6 +520,8 @@ header ul .login {
 .mining-section {
   background: linear-gradient(180deg, #2b076e 0%, #0d0d2b 100%);
   padding: 80px 120px;
+  background: url("./files/something2.png");
+  background-repeat: no-repeat;
 }
 
 .subscribe-section {
@@ -521,6 +532,9 @@ header ul .login {
   border-radius: 16px;
   align-items: center;
   column-gap: 150px;
+  background-image: url("./files/bitcoin-background.png");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .subscribe-section button {
@@ -628,7 +642,7 @@ footer li:hover {
   padding-bottom: 24px;
 }
 
-.text-slide-up{
+.text-slide-up {
   overflow-y: hidden;
   white-space: nowrap;
 }
@@ -637,8 +651,8 @@ footer li:hover {
   animation: text_slide_up 1s ease 1 normal;
 }
 
-.text-slide-up:hover{
-    border-bottom: 1px solid white;
+.text-slide-up:hover {
+  border-bottom: 1px solid white;
   width: fit-content;
 }
 /* END OF FOOTER */
@@ -656,12 +670,14 @@ footer li:hover {
   top: 20%;
   height: 100%;
   transform: scale(1.4);
+  display: none;
 }
 
 .background-2 {
   height: 100%;
   width: 100%;
   right: 0;
+  display: none;
 }
 
 .background-3 {
@@ -671,12 +687,14 @@ footer li:hover {
 .background-4 {
   bottom: 0;
   transform: translateY(150px);
+  display: none;
 }
 
 .background-5 {
   bottom: 0;
   right: 0;
   transform: translateY(150px);
+  display: none;
 }
 
 .background-6 {
@@ -687,6 +705,7 @@ footer li:hover {
   /* top: 0; */
   right: 0;
   transform: translateY(-500px);
+  display: none;
 }
 
 .background-8 {
@@ -695,15 +714,17 @@ footer li:hover {
 }
 
 .background-9 {
+  display: none;
   right: 150px;
 }
-.background-10{
-    transform: translateY(-300px);
-
+.background-10 {
+  transform: translateY(-300px);
+  display: none;
 }
 .background-11 {
   right: 100px;
   transform: translateY(-300px);
+  display: none;
 }
 
 /* media queries */
