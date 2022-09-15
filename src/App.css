@@ -1,3 +1,6 @@
+
+
+
 * {
   box-sizing: border-box;
   font-family: "Oxanium", sans-serif;
@@ -841,3 +844,9 @@ footer li:hover {
     transform: scale(1.05);
   }
 }
+
+
+
+  /* <TrackVisibility partialVisibility>
+            {({ isVisible }) => <ComponentToTrack />}
+        </TrackVisibility> */

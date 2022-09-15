@@ -1,10 +1,12 @@
 import React from "react";
+import TrackVisibility from "react-on-screen";
 
 const BODY2 = () => {
   return (
     <React.Fragment>
       <section>
-        <div className="white-section">
+        <TrackVisibility partialVisibility>
+            {({ isVisible }) => <div className="white-section">
           <h1 style={{ textAlign: "center" }}>
             Trade securely and market the high growth cryptocurrencies.
           </h1>
@@ -65,9 +67,13 @@ const BODY2 = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div>}
+        </TrackVisibility>
+        
       </section>
-      <section className="statistics">
+
+      <TrackVisibility partialVisibility>
+            {({ isVisible }) => <section className="statistics">
         <img
           className="background background-6"
           src={require("./files/features-circle-1.png")}
@@ -124,9 +130,11 @@ const BODY2 = () => {
           </div>
         </div>
 
-      </section>
-
-      <section className="mining-section">
+      </section>}
+        </TrackVisibility>
+      
+<TrackVisibility partialVisibility>
+            {({ isVisible }) => <section className="mining-section">
                 <img
           className="background background-7"
           src={require("./files/features-circle-2.png")}
@@ -169,7 +177,9 @@ const BODY2 = () => {
           src={require("./files/something.png")}
           alt="background-img"
         />
-      </section>
+      </section>}
+        </TrackVisibility>
+      
     </React.Fragment>
   );
 };

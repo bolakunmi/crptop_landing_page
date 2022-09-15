@@ -1,10 +1,14 @@
 import React from "react";
+import TrackVisibility from "react-on-screen";
+
+
 
 const BODY = () => {
   return (
     <React.Fragment>
       <div className="body-container1">
-        <section className="hero-section">
+        <TrackVisibility partialVisibility>
+            {({ isVisible }) => <section className="hero-section">
           <div className="hero-description-container">
             <div className="hero-advert">
               <div>70% save</div>
@@ -36,9 +40,11 @@ const BODY = () => {
             src={require("./files/hero-ribbon-2.png")}
             alt="background-img"
           />
-        </section>
-
-        <section className="info">
+        </section>}
+        </TrackVisibility>
+        
+<TrackVisibility partialVisibility>
+            {({ isVisible }) => <section className="info">
           <div className="info-div">
             <div className="info-div-img">
               <img
@@ -75,9 +81,11 @@ const BODY = () => {
               <p>trusted wallet investors</p>
             </div>
           </div>
-        </section>
-
-        <section className="why">
+        </section>}
+        </TrackVisibility>
+        
+<TrackVisibility partialVisibility>
+            {({ isVisible }) => <section className="why">
           <img
             className="background background-3"
             src={require("./files/why-model-1.png")}
@@ -103,8 +111,11 @@ const BODY = () => {
             </p>
             <button>learn more</button>
           </div>
-        </section>
-        <section className="calculate">
+        </section>}
+        </TrackVisibility>
+
+        <TrackVisibility partialVisibility>
+            {({ isVisible }) => <section className="calculate">
           <div className="calculate-info">
             <h2>Check how much you can earn with us</h2>
             <p>
@@ -146,7 +157,10 @@ const BODY = () => {
               </p>
             </div>
           </div>
-        </section>
+        </section>}
+        </TrackVisibility>
+        
+        
       </div>
     </React.Fragment>
   );
