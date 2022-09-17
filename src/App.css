@@ -156,7 +156,7 @@ header ul .login {
 .hero-section img {
   height: 400px;
   width: auto;
-  animation: swell 2s ease 0.4s 1 normal;
+  animation: swell 2s ease 0s 1 normal;
 }
 
 .hero-section h1 {
@@ -164,7 +164,7 @@ header ul .login {
   text-transform: capitalize;
   padding: 8px 0;
   margin: 0;
-  animation: slide-up 2s ease 0.4s 1 normal;
+  animation: slide-up 2s ease 0s 1 normal;
 
   /* adjust the line height */
 }
@@ -188,13 +188,13 @@ header ul .login {
   color: rgb(75, 85, 99);
   text-transform: uppercase;
   border-radius: 16px;
-  animation: swell 2s ease 0.4s 1 normal;
+  animation: swell 2s ease 0s 1 normal;
 }
 
 .hero-description-container p {
   font-size: 12px;
   margin-top: 0;
-  animation: slide-up 2s ease 0.4s 1 normal;
+  animation: slide-up 2s ease 0s 1 normal;
 }
 
 .hero-description-container button {
@@ -205,7 +205,7 @@ header ul .login {
   color: white;
   padding: 4px 16px;
   border-radius: 20px;
-  animation: swell 2s ease 0.4s 1 normal;
+  animation: swell 2s ease 0s 1 normal;
   display: inline-flex;
   align-items: center;
 }
@@ -219,7 +219,7 @@ header ul .login {
   align-items: center;
   justify-content: center;
   margin-left: 24px;
-  animation: slide-right 2.5s ease 0.4s 1 normal;
+  animation: slide-right 2.5s ease 0s 1 normal;
 }
 .vector img {
   background: white;
@@ -233,7 +233,7 @@ header ul .login {
 .info-div {
   display: inline-flex;
   align-items: center;
-  animation: slide-up 2.5s ease 0.4s 1 normal;
+  animation: slide-up 2.5s ease 0s 1 normal;
 }
 
 .info-div-img {
@@ -250,7 +250,7 @@ header ul .login {
 .info-div-img img {
   width: 40px;
   height: auto;
-  animation: swell 2.5s ease 0.4s 1 normal;
+  animation: swell 2.5s ease 0s 1 normal;
 }
 
 .info-div h2 {
@@ -271,12 +271,12 @@ header ul .login {
 }
 
 .why img {
-  animation: slide-right 2s ease 0.4s 1 normal;
+  animation: slide-right 2s ease 0s 1 normal;
 }
 
 .why div {
   margin-top: 80px;
-  animation: slide-left 2s ease 0.4s 1 normal;
+  animation: slide-left 2s ease 0s 1 normal;
 }
 
 .why button {
@@ -297,7 +297,7 @@ header ul .login {
 
 .calculate-info {
   transform: translateY(70px);
-  animation: slide-down-special 2s ease 0.4s 1 normal;
+  animation: slide-down-special 2s ease 0s 1 normal;
 }
 
 @keyframes slide-down-special {
@@ -313,7 +313,7 @@ header ul .login {
 
 .calculate-info p {
   line-height: 24px;
-  animation: slide-down-special 2s ease 0.4s 1 normal;
+  animation: slide-down-special 2s ease 0s 1 normal;
 }
 
 .calculator-container {
@@ -321,7 +321,7 @@ header ul .login {
   background: #fbfcfe;
   border-radius: 16px;
   color: #0d0d2b;
-  animation: swell-special 2s ease 0.4s 1 normal;
+  animation: swell-special 2s ease 0s 1 normal;
 }
 
 @keyframes swell-special {
@@ -707,7 +707,7 @@ footer li:hover {
   height: unset;
   width: unset;
   position: absolute;
-  animation: swell 2s ease 0.4s 1 normal;
+  animation: swell 2s ease 0s 1 normal;
 }
 
 .background-1 {
