@@ -5,9 +5,9 @@ const BODY2 = () => {
   return (
     <React.Fragment>
       <section>
-        <TrackVisibility partialVisibility>
-          {({ isVisible }) => (
-            <div className={isVisible ? "white-section" : "blur"}>
+
+ (
+            <div className={"white-section" }>
               <h1 style={{ textAlign: "center" }}>
                 Trade securely and market the high growth cryptocurrencies.
               </h1>
@@ -70,7 +70,7 @@ const BODY2 = () => {
               </div>
             </div>
           )}
-        </TrackVisibility>
+
       </section>
 
       <section className="statistics">

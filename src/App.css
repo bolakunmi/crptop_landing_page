@@ -233,7 +233,7 @@ header ul .login {
 .info-div {
   display: inline-flex;
   align-items: center;
-  animation: slide-up 2.5s ease 0s 1 normal;
+  /* animation: slide-up 2.5s ease 0s 1 normal; */
 }
 
 .info-div-img {

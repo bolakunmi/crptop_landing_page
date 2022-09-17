@@ -5,9 +5,8 @@ const BODY = () => {
   return (
     <React.Fragment>
       <div className="body-container1">
-        <TrackVisibility partialVisibility>
-          {({ isVisible }) => (
-            <section className={isVisible ? "hero-section" : "blur"}>
+
+            <section className={ "hero-section"}>
               <div className="hero-description-container">
                 <div className="hero-advert">
                   <div>70% save</div>
@@ -40,12 +39,10 @@ const BODY = () => {
                 alt="background-img"
               />
             </section>
-          )}
-        </TrackVisibility>
 
-        <TrackVisibility partialVisibility>
-          {({ isVisible }) => (
-            <section className={isVisible ? "info" : "blur"}>
+
+
+            <section className={ "info " }>
               <div className="info-div">
                 <div className="info-div-img">
                   <img
@@ -83,8 +80,7 @@ const BODY = () => {
                 </div>
               </div>
             </section>
-          )}
-        </TrackVisibility>
+          
 
         <TrackVisibility partialVisibility>
           {({ isVisible }) => (
