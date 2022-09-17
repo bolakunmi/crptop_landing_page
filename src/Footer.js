@@ -1,9 +1,12 @@
 import React from "react";
 import TrackVisibility from "react-on-screen";
 
-
-const FOOTER_ABOUT =()=>{
-return(<div className="footer-about">
+const FOOTER = () => {
+  return (
+    <footer>
+      <TrackVisibility partialVisibility>
+        {({ isVisible }) => (
+          <div className={isVisible ? "footer-about" : "blur"}>
             <div>
               <img src={require("./files/imports/Logo.png")} alt="logo"></img>
             </div>
@@ -74,21 +77,14 @@ return(<div className="footer-about">
                 </div>
               </div>
             </div>
-          </div>)
-}
-const FOOTER = () => {
-  return (
-    <footer>
-      <TrackVisibility partialVisibility>
-        {({ isVisible }) => isVisible ? (<FOOTER_ABOUT/>
-          
-        ) : <loading/>}
+          </div>
+        )}
       </TrackVisibility>
 
       <TrackVisibility partialVisibility>
         {({ isVisible }) => (
           <div>
-            <div className="socials">
+            <div className={isVisible ? "socials" : "blur"}>
               <p>© 2022 CRAPPO. All rights reserved.</p>
               <div>
                 <img
