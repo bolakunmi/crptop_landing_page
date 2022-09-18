@@ -6,7 +6,7 @@ const BODY2 = () => {
     <React.Fragment>
       <section>
 
- (
+ 
             <div className={"white-section" }>
               <h1 style={{ textAlign: "center" }}>
                 Trade securely and market the high growth cryptocurrencies.
@@ -69,7 +69,7 @@ const BODY2 = () => {
                 </div>
               </div>
             </div>
-          )}
+          
 
       </section>
 

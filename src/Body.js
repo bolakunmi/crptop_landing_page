@@ -41,8 +41,10 @@ const BODY = () => {
             </section>
 
 
+<TrackVisibility partialVisibility>
 
-            <section className={ "info " }>
+    {({isVisible})=>(
+            <section className={ isVisible? "info " :'blur'}>
               <div className="info-div">
                 <div className="info-div-img">
                   <img
@@ -79,12 +81,13 @@ const BODY = () => {
                   <p>trusted wallet investors</p>
                 </div>
               </div>
-            </section>
+            </section>)}
+            </TrackVisibility>
           
 
-        <TrackVisibility partialVisibility>
+       <TrackVisibility partialVisibility>
           {({ isVisible }) => (
-            <section className={isVisible ? `why` : ` blur`}>
+            <section className={isVisible ? 'why' : ' blur'}>
               <img
                 className="background background-3"
                 src={require("./files/why-model-1.png")}
