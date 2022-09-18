@@ -272,6 +272,8 @@ header ul .login {
 
 .why img {
   animation: slide-right 2s ease 0s 1 normal;
+    height: 450px;
+  width: auto;
 }
 
 .why div {
@@ -635,6 +637,7 @@ footer {
   font-size: 16px;
   align-items: flex-start;
   padding-top: 24px;
+  height: 250px;
 }
 
 .footer-about ul,

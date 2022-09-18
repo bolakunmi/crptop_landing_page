@@ -5,8 +5,9 @@ const BODY = () => {
   return (
     <React.Fragment>
       <div className="body-container1">
-
-            <section className={ "hero-section"}>
+        <TrackVisibility partialVisibility>
+          {({ isVisible }) => (
+            <section className={isVisible?"hero-section":'blur'}>
               <div className="hero-description-container">
                 <div className="hero-advert">
                   <div>70% save</div>
@@ -20,9 +21,13 @@ const BODY = () => {
                 </p>
                 <button>
                   try for FREE
-                  <div className="vector">
-                    <img src={require("./files/Vector.png")} alt="arrow" />
-                  </div>
+                  <TrackVisibility partialVisibility>
+                    {({ isVisible }) => (
+                      <div className={isVisible ? "vector" : "blur"}>
+                        <img src={require("./files/Vector.png")} alt="arrow" />
+                      </div>
+                    )}
+                  </TrackVisibility>
                 </button>
               </div>
               <div>
@@ -39,12 +44,12 @@ const BODY = () => {
                 alt="background-img"
               />
             </section>
+          )}
+        </TrackVisibility>
 
-
-<TrackVisibility partialVisibility>
-
-    {({isVisible})=>(
-            <section className={ isVisible? "info " :'blur'}>
+        <TrackVisibility partialVisibility>
+          {({ isVisible }) => (
+            <section className={isVisible ? "info " : "blur"}>
               <div className="info-div">
                 <div className="info-div-img">
                   <img
@@ -81,41 +86,41 @@ const BODY = () => {
                   <p>trusted wallet investors</p>
                 </div>
               </div>
-            </section>)}
-            </TrackVisibility>
-          
-
-       <TrackVisibility partialVisibility>
-          {({ isVisible }) => (
-            <section className={isVisible ? 'why' : ' blur'}>
-              <img
-                className="background background-3"
-                src={require("./files/why-model-1.png")}
-                alt="background-img"
-              />
-              <img
-                className="background background-4"
-                src={require("./files/why-ribbon.png")}
-                alt="background-img"
-              />
-              <img
-                className="background background-5"
-                src={require("./files/why-model-2.png")}
-                alt="background-img"
-              />
-              <img src={require("./files/why-img.png")} alt="why-img" />
-              <div>
-                <h1>why you should choose CHAPPO</h1>{" "}
-                <p style={{ "font-size": "16px" }}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-                  laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. In, praesentium.
-                </p>
-                <button>learn more</button>
-              </div>
             </section>
           )}
         </TrackVisibility>
+
+        {/* <TrackVisibility partialVisibility>
+          {({ isVisible }) => ( */}
+        <section className={"why"}>
+          <img
+            className="background background-3"
+            src={require("./files/why-model-1.png")}
+            alt="background-img"
+          />
+          <img
+            className="background background-4"
+            src={require("./files/why-ribbon.png")}
+            alt="background-img"
+          />
+          <img
+            className="background background-5"
+            src={require("./files/why-model-2.png")}
+            alt="background-img"
+          />
+          <img src={require("./files/why-img.png")} alt="why-img" />
+          <div>
+            <h1>why you should choose CHAPPO</h1>{" "}
+            <p style={{ "font-size": "16px" }}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+              laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. In, praesentium.
+            </p>
+            <button>learn more</button>
+          </div>
+        </section>
+        {/* )}
+        </TrackVisibility> */}
 
         <TrackVisibility partialVisibility>
           {({ isVisible }) => (
