@@ -50,6 +50,7 @@ p {
 
 /* HEADER */
 header {
+  width: 100%;
   background: #0d0d2b;
   padding: 0px 100px;
   display: flex;
@@ -272,7 +273,7 @@ header ul .login {
 
 .why img {
   animation: slide-right 2s ease 0s 1 normal;
-    height: 450px;
+  height: 450px;
   width: auto;
 }
 
@@ -505,7 +506,7 @@ header ul .login {
 .statistics {
   background: #2b076e;
   color: white;
-  padding: 20px;
+  padding: 20px 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -543,7 +544,7 @@ header ul .login {
 .statistics-object {
   display: flex;
   align-items: center;
-  padding: 60px;
+  padding: 30px;
   column-gap: 50px;
 }
 
@@ -785,20 +786,139 @@ footer li:hover {
   animation: none;
 }
 
+.vector2{
+      display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
 /* media queries */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   body,
   html {
     margin: 0;
     padding: 0;
-    width: fit-content;
+    width: 100%;
     height: 100%;
     box-sizing: border-box;
   }
 
   * {
     box-sizing: inherit;
+    flex-wrap: wrap;
+    padding: 0;
   }
+
+  header,
+  .body-container1,
+  .white-section,
+  footer,
+  .statistics {
+    padding: 0 16px ;
+  }
+
+
+  .calculator-container {
+    width: auto;
+  }
+  .coins-container {
+    row-gap: 50px;
+    flex-direction: column;
+  }
+
+  .coins {
+    margin: 0 auto;
+  }
+
+  .vector2{
+    display: flex;
+    align-items: center;
+  }
+
+  .statistics-object button, .subscribe-section button, .hero-description-container button, .why button{
+    float: right;
+  }
+
+  .hero-description-container{
+    padding: 0 16px;
+  }
+
+  .statistics-object img, .why img{
+    width: 90%;
+        margin: 0 auto;
+        height: auto;
+  }
+
+  .hero-img-big{
+     justify-content: center;
+     margin: 0 auto;
+  }
+
+  .hero-description-container p{
+    margin-left: 10%;
+  }
+
+
+  .statistics-object,  .statistics-object:nth-child(odd){
+    flex-direction: column-reverse;
+    column-gap: 30px;
+  }
+  .background{
+    display: none;
+  }
+
+  .mining-section{
+    padding: 64px;
+  }
+
+  .footer-about{
+        background: #0d0d2b;
+    display: flex;
+    color: white;
+    font-size: 16px;
+    padding-top: 24px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+
+  .statistics-object{
+    align-items: flex-start;
+  }
+
+  .calculator-container{
+    padding: 32px;
+    width: 90%;
+  }
+  
+
+  .calculator-tools{
+        flex-direction: column;
+            row-gap: 30px;
+  }
+
+  .calculator-tools select, .calculator-tools input{
+    width: 90%;
+  }
+
+  .calculator-tools button{
+    width: 150px;
+    float: right;
+    margin: 0 auto;
+  }
+
+  .coins button{
+     height: auto; 
+    padding: 10px;
+     width: auto;
+  }
+
+  .coins:hover .coins-button{
+    padding: 0px 10px;
+  }
+
 }
 
 /* animations */

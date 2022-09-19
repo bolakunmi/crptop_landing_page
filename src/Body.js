@@ -1,6 +1,7 @@
 import React from "react";
 import TrackVisibility from "react-on-screen";
 
+
 const BODY = () => {
   return (
     <React.Fragment>
@@ -30,8 +31,8 @@ const BODY = () => {
                   </TrackVisibility>
                 </button>
               </div>
-              <div>
-                <img src={require("./files/hero-img.png")} alt="hero-img" />
+              <div className="hero-img-big">
+                <img src={require("./files/hero-img.png")} alt="hero-img" className="hero-img-big" />
               </div>
               <img
                 className="background background-1"
